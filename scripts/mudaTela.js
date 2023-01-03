@@ -1,24 +1,20 @@
 // pega o texto
 var mensagem = document.querySelector("[name=decodificador]");
 
-// criptografa
-function criptografa() {
-    console.log(mensagem.value);
-
-
-}
-
-
-
+// transição de tela
 function mostraTexto() {
     var tela2 = document.getElementById('tela2')
     var tela1 = document.getElementById('tela1')
-    if (tela2.style.display === 'none') {
-        tela2.style.display = 'block';
-        tela1.style.display = 'none';
+    if (document.querySelector("[name=decodificador]").value == false) {
+        if (tela2.style.display == 'none') {
+            tela2.style.display = 'block';
+            tela1.style.display = 'none';
+        } else {
+            tela2.style.display = 'none';
+        }
     } else {
-        tela2.style.display = 'none';
-        tela1.style.display = 'block';
+        tela1.style.display = 'none';
+        tela2.style.display = 'block'
     }
 }
 mostraTexto();
@@ -52,7 +48,7 @@ function cripto() {
         document.getElementById("textArea2").innerHTML = `${newArray.join('')}`
     }
 }
-
+// descriptografa
 function decripto() {
     const string = mensagem.value
     var resultado = string.replace(/ai/g, "a")
@@ -72,22 +68,19 @@ copyButton.addEventListener('click', () => {
     textInput.select();
     document.execCommand('copy')
 });
-// faz tudo acontecer
+
+// botao de criptografar
 function uneTudo() {
     mostraTexto();
-    criptografa();
     cripto();
 }
-function uneTudo2() {
-    mostraTexto();
-    criptografa();
-    decripto();
-}
+
+
 var Criptografar = document.querySelector("[value=Criptografar]");
 Criptografar.onclick = uneTudo;
 
 var Descriptografar = document.querySelector("[value=Descriptografar]");
-Descriptografar.onclick = uneTudo2;
+Descriptografar.onclick = decripto;
 
 
 

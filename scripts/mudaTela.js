@@ -74,13 +74,17 @@ function uneTudo() {
     mostraTexto();
     cripto();
 }
+function uneTudo2() {
+    mostraTexto();
+    decripto();
+}
 
 
 var Criptografar = document.querySelector("[value=Criptografar]");
 Criptografar.onclick = uneTudo;
 
 var Descriptografar = document.querySelector("[value=Descriptografar]");
-Descriptografar.onclick = decripto;
+Descriptografar.onclick = uneTudo2;
 
 
 

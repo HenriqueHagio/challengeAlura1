@@ -1,6 +1,25 @@
 @media screen and (max-width: 480px) {
-    .button, .principal, footer, .resultado{
+    body {
+        width: 40%;
+    }
+     footer, main {
         width: auto;
     }
-
+    main {
+        display: flex;
+        flex-direction: column;  
+        
+    }
+    footer {
+        margin-left: 20%;
+    }
+    .tela1 {
+        width: 245%;
+    }
+    .campoTexto,  .button, .tela1, .tela2 {
+        margin: 5px;
+    }
+    .textArea2 {
+        width: 60%;
+    }
 }

@@ -84,8 +84,9 @@ textarea {
 }
 
 .textArea2 {
+    font-size: 24px;
     border: 1px solid white;
-    width: 87%;
+    width: 78%;
     height: 71%;
     border-radius: 2em; 
 }
@@ -95,9 +96,11 @@ textarea {
 }
 footer {
     display: flex;
+    padding-top: 4em;
     width: 20%;
     margin: 0 auto;
     gap: 2%;
+    
 }
 
 footer a,

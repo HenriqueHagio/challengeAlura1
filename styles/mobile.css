@@ -1,24 +1,65 @@
 @media screen and (max-width: 480px) {
     body {
-        width: 40%;
-    }
-     footer, main {
         width: auto;
     }
+    footer,
+    main, .tela1 {
+        width: auto;
+    }
+
     main {
         display: flex;
-        flex-direction: column;  
-        
+        flex-direction: column;
+        scroll-behavior: initial;
+
     }
+
     footer {
         margin-left: 20%;
     }
-    .tela1 {
-        width: 245%;
-    }
-    .campoTexto,  .button, .tela1, .tela2 {
+
+    .campoTexto,
+    .button,
+    .tela1,
+    .tela2 {
         margin: 5px;
     }
+
+    .textArea2 {
+        width: 60%;
+    }
+}
+
+/*@media screen and (min-width: 481px  max-width: 1028px) {
+    body {
+        width: 47%;
+    }
+
+    footer,
+    main, .tela1 {
+        width: auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+     
+
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+
+    .campoTexto,
+    .button,
+    .tela1,
+    .tela2 {
+        margin: 5px;
+    }
+
     .textArea2 {
         width: 60%;
     }

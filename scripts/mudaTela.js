@@ -51,12 +51,8 @@ function cripto() {
 // descriptografa
 function decripto() {
     const string = mensagem.value
-    var resultado = string.replace(/ai/g, "a")
-    var resultado2 = resultado.replace(/ufat/g, "u")
-    var resultado3 = resultado2.replace(/ober/g, "o")
-    var resultado4 = resultado3.replace(/imes/g, "i")
-    var resultado5 = resultado4.replace(/enter/g, "e")
-    document.getElementById("textArea2").innerHTML = resultado5;
+    var resultado = string.replace(/ai/g, "a").replace(/ufat/g, "u").replace(/ober/g, "o").replace(/imes/g, "i").replace(/enter/g, "e")
+    document.getElementById("textArea2").innerHTML = resultado;
 }
 
 
